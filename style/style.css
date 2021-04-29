@@ -452,7 +452,8 @@ body {
     border: none;
     background: #F16D7F;
     border-radius: 0 20px 20px 0;
-    color: var(--white-color)
+    color: var(--white-color);
+    outline: none;
 }
 
 .information__other{
