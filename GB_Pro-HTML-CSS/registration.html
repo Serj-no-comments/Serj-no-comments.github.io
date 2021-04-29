@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="shortcut icon" href="../GB_Pro-HTML-CSS/img/mark.svg">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/registration.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+        <div>
+            <a href="../GB_Pro-HTML-CSS/index.html" class="header__logo"><img src="./img/mark.svg" alt="mark" width="44" height="38"></a>
+            <input class="header__loupe" type="image" src="./img/loupe.svg" alt="loupe" width="26" height="27">
+        </div>
+            
+        <div>
+            <input class="header__menu-button" type="image" src="./img/burger.svg" alt="burger" width="32" height="23" >
+            <a class="header__link" href="../GB_Pro-HTML-CSS/registration.html" ><img src="./img/hollowHead.svg" alt="Hollow Head" width="29" height="29"></a>
+            <a href="#" class="header__link link-cart"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+        
+        <nav class="header__navigation">
+            <div class="header__navigation-menu">
+                <h2 class="header__navigation-title">menu</h2>
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item navigation-item">
+                        <a href="#" class="navigation-item__link">man</a> 
+                        <ul class="navigation-item__sublist">
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add"> Accessories</a> </li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add"> Bags</a> </li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add"> Denim</a> </li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add"> T-Shirts</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-item__link">woman</a> 
+                        <ul class="navigation-item__sublist">
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add"> Accessories</a></li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add"> Jackets & Coats</a></li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add">Polos</a> </li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add">T-Shirts</a> </li>
+                            <li class="navigation-item__sublist-link"> <a href="#" class="navigation-item__sublist-add">Shirts</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-item__link">kids</a> 
+                        <ul class="navigation-item__sublist">
+                            <li class="navigation-item__sublist-link"><a href="#" class="navigation-item__sublist-add">Accessories</a> </li>
+                            <li class="navigation-item__sublist-link"><a href="#" class="navigation-item__sublist-add">Jackets & Coats</a> </li>
+                            <li class="navigation-item__sublist-link"><a href="#" class="navigation-item__sublist-add">Polos</a> </li>
+                            <li class="navigation-item__sublist-link"><a href="#" class="navigation-item__sublist-add">T-Shirts</a> </li>
+                            <li class="navigation-item__sublist-link"><a href="#" class="navigation-item__sublist-add">Shirts</a> </li>
+                            <li class="navigation-item__sublist-link"><a href="#" class="navigation-item__sublist-add">Bags</a> </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="header__registration">
+            <h1 class="header__main container">
+                registration
+            </h1>
+        </section>
+        <section class="registration container">
+            <form class="registration__form">
+                <div class="registration__blank">
+                    <div class="registration__blank-personal">
+                        <div class="registration__blank-personal__block">
+                            <h3 class="registration__blank-personal__head">Your name</h3>
+                            <p><input class="registration__blank-personal__input" type="text" src="#" placeholder="First Name"></p> 
+                            <input class="registration__blank-personal__input" type="text" src="#" placeholder="Last Name">
+                        </div>
+                        <div class="registration__blank-gender">
+                            <input class="registration__blank-gender__point" type="radio" id="contactChoice1" name="contact" value="email">
+                            <label class="registration__blank-gender__text" for="contactChoice1">Female</label>
+                            <input class="registration__blank-gender__point" type="radio" id="contactChoice2" name="contact" value="phone">
+                            <label class="registration__blank-gender__text" for="contactChoice2">Male</label>
+                        </div>
+                        
+                    </div>
+                    <div class="registration__blank-account">
+                            <h3 class="registration__blank-personal__head">Login details</h3>
+                            <p><input class="registration__blank-personal__input " type="text" src="#" placeholder="Email"></p> 
+                            <input class="registration__blank-personal__input " type="text" src="#" placeholder="Password">
+                    </div>
+                    <p class="registration__blank-warning">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <div class="registration__blank-button">
+                        <a href="#" class="registration__blank-button">join now</a>  
+                    </div>
+                </div>
+            </form>
+            <section class="registration__privileges">
+                <h2 class="registration__privileges-apper">loyalty has its perks</h2>
+                <p class="registration__privileges-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <nav>
+                    <ul class="registration__privileges-sublist">
+                        <li class="registration__privileges-list">15% off welcome offer</li>
+                        <li class="registration__privileges-list">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__privileges-list">$10 off a purchase on your birthday</li>
+                        <li class="registration__privileges-list">Early access to products</li>
+                        <li class="registration__privileges-list">Exclusive offers & rewards</li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        
+    </main>
+    <footer>
+
+        <section class="information">
+            <section class="information__center container">
+                <div class="information__author">
+                    <img class="information__author-img" src="./img/photo.png" alt="photo">
+                    <p class="information__author-quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <form action="endpoint" class="information__feedback">
+                    <h2 class="information__feedback-head">subsctribe</h2> 
+                    <p class="information__feedback-text">for our newletter and promotion</p>
+                    <div class="infornation__feedback-writer">
+                        <input class="information__feedback-input" type="text" placeholder="Enter Your Email">
+                        <button class="information__feedback-button">Subscribe</button>
+                    </div>
+                
+            </section>   
+        </section>
+        <section class="information__other">
+            <section class="information__center container">
+                <p class="information__copyright"> &copy 2021  Brand  All Rights Reserved.</p>
+                <div class="information__partners">
+                    <a  href="#"><img class="information__link" src="./img/facebook.svg" alt="facebook" width="8" height="15"></a>
+                    <a  href="#"><img class="information__link" src="./img/instagram.svg" alt="instogram" width="15" height="15" ></a> 
+                    <a  href="#"><img class="information__link" src="./img/pinterest.svg" alt="pinterest" width="12" height="15"></a>
+                    <a  href="#"><img class="information__link-twitter" src="./img/twitter.svg" alt="twitter" width="16" height="13"></a>
+                </div>
+            </section> 
+        </section>
+        
+
+        
+
+</footer>
+</body>
+</html>
