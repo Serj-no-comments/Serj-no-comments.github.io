@@ -82,20 +82,15 @@ body {
     position: absolute;
     right: 0;
     top: 75px;
+    right: 2%;
 }
 .header__navigation-menu{
-    padding: 37px 0 0 34px;
+    padding: 16px 0 0 34px;
     position: relative;
 }
-.header__navigation-menu:before{
-    content: '';
-    width: 13px;
-    height: 13px;
-    top: 16px;
-    right: 17px;
-    background-image: url(../img/kross.svg);
-    position: absolute;
-}
+
+
+
 
 .header__navigation-title{
     font-size: 14px;
@@ -104,6 +99,18 @@ body {
     text-transform: uppercase;
     padding: 0 0 24px;
 }
+
+.header__navigation-kross{
+    border: none;
+    width: 12px;
+    height: 12px;
+    background-color: var(--white-color);
+    margin-left: 160px;
+    outline: none;
+    cursor: pointer
+}
+
+
 .navigation-item__link{
     font-size: 14px;
     line-height: 17px;
@@ -297,8 +304,54 @@ body {
 }
 
 .products__item-buy{
+    width: 100%;
     position: relative;
 }
+
+.products__item-buy_back{
+    display: none;
+}
+
+.products__item-buy:hover .products__item-buy_back{
+    display: block;
+}
+.products__item-img__back-dark{
+    background-image: url(../img/dark.png);
+    width: 360px;
+    min-height: 420px;
+    position: absolute;
+    top: 0;
+}
+
+.products__item-img__back-add{
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 13px 15px 13px 50px;
+    outline: none;
+    cursor: pointer
+}
+
+.products__item-img__back-add::before{
+    position: absolute;
+    content: '';
+    background-image: url(../img/cart.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 30px;
+    top: 15%;
+    left: 5%;
+}
+
+.products__item-img__back-add:focus{
+    outline: 2px solid var(--white-color);
+}
+
+
 .products__item-cart{
     display: block;
     text-decoration: none;
@@ -454,6 +507,7 @@ body {
     border-radius: 0 20px 20px 0;
     color: var(--white-color);
     outline: none;
+    cursor: pointer
 }
 
 .information__other{
