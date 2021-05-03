@@ -1,0 +1,107 @@
+.information {
+    background-image: url(../img/beach.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+    &__center {
+        @include flex-center-space-between();
+    }
+
+    &__author {
+        @include flex-center-column();
+        margin: 86px 223px 0 0;
+    }
+
+    &__author-quote {
+        margin: 30px 0 126px;
+        width: 360px;
+        height: 100px;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+
+    &__feedback {
+        text-align: center;
+    }
+
+    &__feedback-head {
+        font-size: 24px;
+        line-height: 167.2%;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-weight: 700;
+    }
+
+    &__feedback-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 167.2%;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+    }
+
+    &__feedback-writer {
+        font-size: 0;
+    }
+
+    &__feedback-input {
+        padding: 17px 100px 17px 22px;
+        background: #E1E1E1;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+    }
+
+    &__feedback-input::placeholder {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0;
+
+    }
+
+    &__feedback-input:hover,
+    &__feedback-input:focus {
+        border: 1px solid #F16D7F;
+        cursor: pointer;
+    }
+
+
+    &__feedback-button {
+        padding: 17px 17px 17px 22px;
+        border: none;
+        background: #F16D7F;
+        border-radius: 0 20px 20px 0;
+        color: $white-color;
+        outline: none;
+        cursor: pointer
+    }
+
+    &__other {
+        @include flex-center-space-between();
+        min-height: 80px;
+        background-color: $black-color;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__link {
+        padding: 9px 12px;
+        background-color: $white-color;
+        margin: 0 8px 0 0;
+    }
+
+    &__link-twitter {
+        padding: 10px 8px;
+        background-color: $white-color;
+    }
+}

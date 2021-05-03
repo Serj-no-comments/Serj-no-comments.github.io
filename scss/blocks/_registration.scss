@@ -1,0 +1,139 @@
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+
+    &__form {
+        margin-right: 130px;
+    }
+
+    &__blank-personal__head {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        opacity: 0.7;
+    }
+
+    &__blank-personal__input {
+        display: block;
+        margin: 20px 0 20px 0;
+        padding: 16px 274px 16px 17px;
+        opacity: 0.3;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    &__blank-personal__input:hover,
+    &__blank-personal__input:focus {
+        border: 2px solid red;
+        background: white;
+        cursor: pointer;
+    }
+
+    &__blank-gender__point {
+        display: none;
+
+    }
+
+    &__blank-gender__text {
+        opacity: 0.6;
+        margin: 20px;
+        position: relative;
+
+    }
+
+    &__blank-gender__text:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid;
+        position: absolute;
+        left: -16px;
+        top: 2px;
+        border-radius: 6px;
+    }
+
+    &__blank-gender__point:checked+&__blank-gender__text:before {
+        background: #F16D7F;
+    }
+
+    &__blank-gender {
+        padding-bottom: 33px;
+    }
+
+    ::placeholder {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 0;
+    }
+
+    &__blank-warning {
+        padding-bottom: 40px;
+        width: 360px;
+        opacity: 0.3;
+    }
+
+    &__blank-button {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white-color;
+        background-color: #F16D7F;
+        padding: 16px 0 17px 13px;
+        width: 167px;
+        position: relative;
+    }
+
+    &__blank-button:after {
+        content: '';
+        position: absolute;
+        color: $white-color;
+        width: 17px;
+        height: 17px;
+        background-image: url(../img/arrow.svg);
+        margin-left: 20px;
+        margin-top: 4px;
+        background-repeat: no-repeat;
+
+    }
+
+    &__privileges-apper {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        padding-bottom: 32px;
+        opacity: 0.7;
+    }
+
+    &__privileges-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 21px;
+        opacity: 0.7;
+    }
+
+    &__privileges-list {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 16px;
+        position: relative;
+        margin-left: 43px;
+        opacity: 0.7;
+    }
+
+    &__privileges-list::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/checkmark.svg);
+        width: 20px;
+        height: 16px;
+        left: -43px;
+        top: 8px;
+    }
+}
