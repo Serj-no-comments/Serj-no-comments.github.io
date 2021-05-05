@@ -10,14 +10,21 @@
     align-items: center;
 }
 
-@mixin tablet{
-    @media (max-width: $desktop-width) and (min-width: $tablet-width){
+@mixin font($size: 14px, $height: 17px, $weight: 300, $style:normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin tablet {
+    @media (max-width: $max-tablet-width){
         @content;
     }
 }
 
-@mixin phone {
-    @media (max-width: $tablet-width) and (min-width: $phone-width){
+@mixin phone{
+    @media (max-width: $max-phone-width){
         @content;
     }
     

@@ -10,7 +10,9 @@ body {
     width: 1140px;
     margin: 0 auto;
 
-    
+    @include tablet{
+        width: 96%;
+    }
 }
 
 .visually-hidden {

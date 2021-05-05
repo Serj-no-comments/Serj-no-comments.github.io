@@ -5,6 +5,10 @@
     &__wrapper {
         min-height: 75px;
         @include flex-center-space-between();
+
+        @include tablet{
+            padding: 0 16px 0 16px;
+        }
     }
 
     &__logo {
@@ -20,8 +24,6 @@
     &__menu-button:focus~&__navigation,
     &__navigation:hover {
         display: block;
-
-
     }
 
 
@@ -59,7 +61,7 @@
         padding: 16px 0 0 34px;
         position: relative;
         width: 200px;
-        height: 747px;
+        height: 750px;
         right: 0;
     }
 
