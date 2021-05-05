@@ -1,13 +1,6 @@
 .brand {
     background-color: $pink-color;
 
-    &__back-black {
-        position: absolute;
-        display: none;
-        width: 100%;
-        height: 764px;
-        top: 0;
-    }
 
     &__container {
         width: 1600px;
