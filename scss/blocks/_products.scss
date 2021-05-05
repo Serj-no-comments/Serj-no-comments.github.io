@@ -15,7 +15,7 @@
     &__heading-text {
         font-size: 14px;
         line-height: 17px;
-        color: #9F9F9F;
+        color: $gray-color;
     }
 
     &__list {
@@ -48,7 +48,7 @@
     &__item-text {
         font-size: 14px;
         line-height: 17px;
-        color: #9F9F9F;
+        color: $gray-color;
         width: 315px;
         height: 51px;
         font-weight: 300;
@@ -59,7 +59,7 @@
     &__item-price {
         font-size: 16px;
         line-height: 19px;
-        color: #F16D7F;
+        color: $pinky-color;
 
     }
 
@@ -142,15 +142,15 @@
     &__button-add {
         padding: 14px 39px;
         text-decoration: none;
-        border: 1px solid #FF6A6A;
+        border: 1px solid $pinky-color;
         font-size: 16px;
         line-height: 19px;
-        color: #F26376;
+        color: $pinky-color;
     }
 
     &__button-add:hover,
     &__button-add:focus {
-        background-color: #F26376;
+        background-color: $pinky-color;
         color: $white-color;
     }
 }

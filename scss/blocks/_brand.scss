@@ -1,6 +1,14 @@
 .brand {
     background-color: $pink-color;
 
+    &__back-black {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 764px;
+        top: 0;
+    }
+
     &__container {
         width: 1600px;
         margin: 0 auto;
@@ -25,7 +33,7 @@
         content: '';
         width: 12px;
         height: 112px;
-        background-color: #F16D7F;
+        background-color: $pinky-color;
         position: absolute;
         left: -26px;
     }
@@ -38,6 +46,6 @@
     }
 
     &__heading-text-pink {
-        color: #F16D7F;
+        color: $pinky-color;
     }
 }

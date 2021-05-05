@@ -21,7 +21,7 @@
         font-size: 20px;
         line-height: 24px;
         text-align: center;
-        color: #222224;
+        color: $black-color;
     }
 
     &__feedback {
@@ -50,7 +50,7 @@
 
     &__feedback-input {
         padding: 17px 100px 17px 22px;
-        background: #E1E1E1;
+        background: $white-color;
         border: none;
         border-radius: 20px 0 0 20px;
         outline: none;
@@ -65,7 +65,7 @@
 
     &__feedback-input:hover,
     &__feedback-input:focus {
-        border: 1px solid #F16D7F;
+        border: 1px solid $pinky-color;
         cursor: pointer;
     }
 
@@ -73,7 +73,7 @@
     &__feedback-button {
         padding: 17px 17px 17px 22px;
         border: none;
-        background: #F16D7F;
+        background: $pinky-color;
         border-radius: 0 20px 20px 0;
         color: $white-color;
         outline: none;

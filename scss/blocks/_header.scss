@@ -21,7 +21,10 @@
     &__menu-button:active~&__navigation,
     &__navigation:hover {
         display: block;
+
+
     }
+
 
     &__link {
         margin: 0 0 0 33px;
@@ -34,7 +37,7 @@
             content: '0';
             color: $white-color;
             padding: 2px 6px 2px 6px;
-            background-color: #F16D7F;
+            background-color: $pinky-color;
             position: absolute;
             border-radius: 10px;
             top: -25px;
