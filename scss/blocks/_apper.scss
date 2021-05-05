@@ -1,0 +1,13 @@
+.apper {
+    background-color: $pink-color;
+
+    &-head {
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+        text-transform: uppercase;
+        height: 148px;
+        display: flex;
+        align-items: center;
+    }
+}
