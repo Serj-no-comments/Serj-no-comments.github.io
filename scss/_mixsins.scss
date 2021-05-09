@@ -10,6 +10,12 @@
     align-items: center;
 }
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin font($size: 14px, $height: 17px, $weight: 300, $style:normal) {
     font-size: $size;
     line-height: $height;
@@ -18,14 +24,14 @@
 }
 
 @mixin tablet {
-    @media (max-width: $max-tablet-width){
+    @media (max-width: $max-tablet-width) and (min-width: $max-phone-width) {
         @content;
     }
 }
 
-@mixin phone{
-    @media (max-width: $max-phone-width){
+@mixin phone {
+    @media (max-width: $max-phone-width) {
         @content;
     }
-    
+
 }

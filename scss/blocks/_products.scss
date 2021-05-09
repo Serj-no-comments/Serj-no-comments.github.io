@@ -21,16 +21,23 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include tablet {}
+
     }
 
     &__item {
-        height: 581px;
-        width: 360px;
-        left: 230px;
-        top: 1577px;
+        width: 31%;
         border-radius: 0px;
         margin-bottom: 30px;
+
+        @include tablet {
+            min-height: 581px;
+        }
     }
+
+
 
     &__item-img {
         margin-bottom: 25px;
@@ -39,10 +46,6 @@
 
     &__item-heading {
         margin-bottom: 13px;
-    }
-
-    &__item-middle {
-        margin: 0 30px 0 30px;
     }
 
     &__item-text {
@@ -70,6 +73,7 @@
     &__item-buy {
         width: 100%;
         position: relative;
+
     }
 
     &__item-buy_back {

@@ -1,16 +1,30 @@
 .opportunities {
     background-color: $black-color;
 
+
+
     &__list {
         min-height: 371px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            padding-bottom: 64px;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 360px;
+
+        @include tablet {
+            padding-top: 49px;
+        }
+
     }
 
     &__item-img {

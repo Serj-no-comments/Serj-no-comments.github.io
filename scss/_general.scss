@@ -7,10 +7,10 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 
-    @include tablet{
+    @include tablet {
         width: 96%;
     }
 }
@@ -25,4 +25,3 @@ body {
     border: 0;
     clip: rect(0 0 0 0)
 }
-

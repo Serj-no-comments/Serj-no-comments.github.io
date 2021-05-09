@@ -5,17 +5,32 @@
     background-position: center;
     width: 100%;
 
+    @include tablet {
+        background-size: cover;
+
+    }
+
+
+
     &__center {
         @include flex-center-space-between();
+        padding: 62px 0 126px;
+
+        @include tablet {
+            flex-direction: column;
+
+        }
+
     }
 
     &__author {
         @include flex-center-column();
-        margin: 86px 223px 0 0;
+
+
     }
 
     &__author-quote {
-        margin: 30px 0 126px;
+        margin: 30px 0 0 0;
         width: 360px;
         height: 100px;
         font-size: 20px;
@@ -26,6 +41,11 @@
 
     &__feedback {
         text-align: center;
+
+        @include tablet {
+            padding-top: 49px;
+            padding-bottom: 14px;
+        }
     }
 
     &__feedback-head {
@@ -84,6 +104,15 @@
         @include flex-center-space-between();
         min-height: 80px;
         background-color: $black-color;
+
+    }
+
+    &__down {
+        @include flex-center-space-between();
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__copyright {

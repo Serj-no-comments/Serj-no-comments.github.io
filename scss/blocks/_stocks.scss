@@ -7,11 +7,21 @@
     }
 
     &__item {
-        width: 360px;
+        width: 31%;
         min-height: 260px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-size: cover;
+        @include flex-center();
+
+        @include tablet {
+            min-height: 167px;
+        }
+
+        @include phone {
+            margin-top: 32px;
+            width: 100%;
+            min-height: 248px;
+        }
+
     }
 
     &__item-add {
@@ -37,16 +47,40 @@
 
     &__item--woman {
         background-image: url(../img/beautyWoman.jpg);
+
+        @include tablet {
+            min-height: 267px;
+        }
+
+        @include phone {
+            min-height: 111px;
+        }
     }
 
     &__item--man {
         background-image: url(../img/justAMan.jpg);
+
         /*man.jpg*/
+        @include tablet {
+            min-height: 267px;
+        }
+
+        @include phone {
+            min-height: 111px;
+        }
     }
 
     &__item--kids {
         background-image: url(../img/kid.jpg);
+
         /*kids.jpg*/
+        @include tablet {
+            min-height: 267px;
+        }
+
+        @include phone {
+            min-height: 111px;
+        }
     }
 
     &__item--accessories {
@@ -56,7 +90,7 @@
         background-image: url(../img/someStuff.jpg);
         background-repeat: no-repeat;
 
-        @include tablet{
+        @include tablet {
             width: 100%;
         }
     }

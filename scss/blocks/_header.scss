@@ -6,7 +6,7 @@
         min-height: 75px;
         @include flex-center-space-between();
 
-        @include tablet{
+        @include tablet {
             padding: 0 16px 0 16px;
         }
     }
@@ -24,14 +24,16 @@
     &__menu-button:focus~&__navigation,
     &__navigation:hover {
         display: block;
+        z-index: 1;
     }
+
 
 
     &__link {
         margin: 0 0 0 33px;
     }
 
-    &__link-cart{
+    &__link-cart {
         position: relative;
     }
 
@@ -53,8 +55,9 @@
         position: absolute;
         right: 0;
         top: 75px;
-        
+
     }
+
 
 
     &__navigation-menu {
@@ -63,6 +66,10 @@
         width: 200px;
         height: 750px;
         right: 0;
+
+        @include tablet {
+            height: 600px;
+        }
     }
 
 
@@ -74,6 +81,7 @@
         font-weight: 700;
         text-transform: uppercase;
         padding: 0 0 24px;
+
     }
 
     &__navigation-kross {
