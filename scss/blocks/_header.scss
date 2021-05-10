@@ -9,6 +9,8 @@
         @include tablet {
             padding: 0 16px 0 16px;
         }
+
+        @include phone {}
     }
 
     &__logo {
@@ -31,6 +33,10 @@
 
     &__link {
         margin: 0 0 0 33px;
+
+        @include phone {
+            display: none;
+        }
     }
 
     &__link-cart {

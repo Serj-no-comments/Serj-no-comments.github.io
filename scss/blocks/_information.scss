@@ -10,6 +10,11 @@
 
     }
 
+    @include phone {
+        background-size: cover;
+
+    }
+
 
 
     &__center {
@@ -17,6 +22,11 @@
         padding: 62px 0 126px;
 
         @include tablet {
+            flex-direction: column;
+
+        }
+
+        @include phone {
             flex-direction: column;
 
         }
@@ -66,6 +76,7 @@
 
     &__feedback-writer {
         font-size: 0;
+
     }
 
     &__feedback-input {
@@ -113,6 +124,11 @@
         @include tablet {
             flex-direction: row;
         }
+
+        @include phone {
+            flex-direction: column-reverse;
+        }
+
     }
 
     &__copyright {
@@ -121,6 +137,16 @@
         color: $white-color;
         font-size: 16px;
         line-height: 19px;
+
+        @include phone {
+            padding: 40px 0 9px 0;
+        }
+    }
+
+    &__partners {
+        @include phone {
+            padding-top: 40px;
+        }
     }
 
     &__link {
