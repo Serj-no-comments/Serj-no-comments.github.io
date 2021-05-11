@@ -23,7 +23,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @include tablet {}
+        @include tablet {
+            justify-content: space-around;
+        }
+
+        @include phone {
+            justify-content: center;
+        }
 
     }
 
@@ -33,19 +39,22 @@
         margin-bottom: 30px;
 
         @include tablet {
-            min-height: 581px;
+            min-width: 360px;
+        }
+
+        @include phone {
+            width: 95%;
         }
     }
 
 
-
     &__item-img {
-        margin-bottom: 25px;
         position: relative;
+        width: 100%;
     }
 
     &__item-heading {
-        margin-bottom: 13px;
+        margin: 32px 0 13px;
     }
 
     &__item-text {
@@ -71,8 +80,8 @@
     }
 
     &__item-buy {
-        width: 100%;
         position: relative;
+
 
     }
 
@@ -86,8 +95,8 @@
 
     &__item-img__back-dark {
         background-image: url(../img/dark.png);
-        width: 360px;
-        min-height: 420px;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
     }
