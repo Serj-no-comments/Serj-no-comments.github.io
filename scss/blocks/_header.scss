@@ -5,12 +5,8 @@
     &__wrapper {
         min-height: 75px;
         @include flex-center-space-between();
-
-        @include tablet {
-            padding: 0 16px 0 16px;
-        }
-
-        @include phone {}
+       
+        
     }
 
     &__logo {

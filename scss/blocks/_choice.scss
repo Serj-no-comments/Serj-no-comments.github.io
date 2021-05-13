@@ -9,14 +9,18 @@
     
     &__list-item{
         display: flex;
-        margin-bottom: 40px;
+        margin: 0 0 40px 0;
         box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, .2);
-        
+        @include tablet{
+            width: 96%;
+            box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .2);
+        }
     }
 
     &__active{
         padding-top: 32px; 
         @include flex-center-space-between();
+        width: 96%;
 
         @include tablet{
             justify-content: space-around;
@@ -24,6 +28,7 @@
 
         @include phone{
             justify-content: space-between;
+            padding: 0;
         }
         
     }
@@ -36,13 +41,15 @@
         opacity: .6;
         border: 1px solid $light-gray;
         cursor: pointer;
-        margin: 0 5px 0 5px;
+        
         outline: $pinky-color;
 
 
         @include phone{
-            
-            min-height: 32px;
+            @include font($size: 12px, $height: 14px, $weight: 400, $style:normal);
+            width: 50%;
+            padding: 9px 17px;
+            text-transform: none;
         }
     }
 }

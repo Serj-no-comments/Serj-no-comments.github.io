@@ -2,6 +2,10 @@
     &__specification-text{
         @include font($size: 22px, $height: 26px, $weight: 400, $style:normal);
         opacity: .8;
+
+        @include phone{
+            @include font($size: 14px, $height: 17px, $weight: 400, $style:normal);
+        }
     }
     
 }

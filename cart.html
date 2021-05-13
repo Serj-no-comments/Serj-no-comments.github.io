@@ -64,7 +64,7 @@
     </header>
     <main>
         <section class="apper ">
-            <h1 class="apper-head container">
+            <h1 class="apper__head container">
                 shopping cart
             </h1>
         </section>
@@ -83,12 +83,12 @@
                                 </p>
                                 <p class="description__specification-text">Color: Blue</p>
                                 <p class="description__specification-text">Size: x</p>
-                                <p class="description__specification-text specification-text">Quantity: <span class="specification-text__count">2</span> </p>
+                                <p class="description__specification-text specification-text">Quantity:<span class="specification-text__count">2</span> </p>
                             </div>
                         </div>
                     </li>
                     <li class="choice__list-item list-item">
-                        <img src="./img/afroamericanMan.jpg" alt="youngMan">
+                        <img class="list-item__image" src="./img/afroamericanMan.jpg" alt="youngMan">
                         <button class="list-item__kross" type="button"><img src="./img/kross.svg" alt="kross"></button>
                         <div class="list-item__description">
                             
@@ -105,8 +105,8 @@
                     </li>
                 </ul>
                 <div class="choice__active">
-                    <button class="choice__active-button">clear shopping cart</button>
-                    <button class="choice__active-button">continue shopping</button>
+                    <button class="choice__active-button active-button">Clear shopping cart</button>
+                    <button class="choice__active-button">Continue shopping</button>
                 </div>
             </section>
             <section class="result">
@@ -121,9 +121,12 @@
                     <button class="adress__information-button">get a quote</button>
                 </section>
                 <section class="result__price price">
-                    <p class="price__one">sub total  <span class="price__one-number">$900</span></p>
-                    <p class="price__all">grand total     <span class="price__all-number">$900</span> </p>
-                    <button class="price__button">proceed to checkout</button>
+                    <div class="price__block">
+                        <p class="price__one">sub total  <span class="price__one-number">$900</span></p>
+                        <p class="price__all">grand total     <span class="price__all-number">$900</span> </p>
+                        <button class="price__button">proceed to checkout</button>
+                    </div>
+                    
                 </section>
             </section>
         </section>

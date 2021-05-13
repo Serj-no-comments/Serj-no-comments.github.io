@@ -2,10 +2,15 @@
     display: flex;
     justify-content: space-between;
     padding: 96px 0 128px 0;
-    
     @include tablet{
         flex-direction: column;
-        align-items: center;
-        
+        align-items:flex-end;
+        width: 96%;
+    }
+    
+    @include phone{
+        padding: 40px 0;
+        width: 96%;
+        margin: 0 auto;
     }
 }

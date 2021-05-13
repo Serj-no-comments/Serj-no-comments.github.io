@@ -1,10 +1,22 @@
 .list-item{
     position: relative;
+    height: auto;
+    
     &__description{
         padding:22px 97px 0 31px;
-        
+        @include phone{
+            width: 43%;
+            padding: 15px 53px 20px 17px;
+        }
     }
 
+    &__image{
+        height: auto;
+        @include phone{
+            width: 34%;
+            
+        }
+    }
     &__kross{
         position: absolute;
         top: 28px;
@@ -13,13 +25,22 @@
         border: none;
         cursor: pointer;
         outline: none;
+
+        @include phone{
+            top: 17px;
+            right: 12px;
+        }
     }
 
     &__description-name{
         padding-bottom: 42px;
         @include font($size: 24px, $height: 29px, $weight: 400, $style:normal);
         text-transform: uppercase;
-        width: 200px;     
+        
+        @include phone{
+            @include font($size: 14px, $height: 19px, $weight: 400, $style:normal);
+            padding-bottom: 15px;
+        }
     }
 
     
