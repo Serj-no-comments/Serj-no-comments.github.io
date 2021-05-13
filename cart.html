@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
     <link rel="shortcut icon" href="./img/mark.svg">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Cart</title>
 </head>
 <body>
     <header class="header">
@@ -22,7 +21,7 @@
         <div>
             <input  class="header__menu-button" type="image" src="./img/burger.svg" alt="burger" width="32" height="23" >
             <a class="header__link" href="./registration.html" ><img src="./img/hollowHead.svg" alt="Hollow Head" width="29" height="29"></a>
-            <a href="./cart.html" class="header__link header__link-cart"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+            <a href="#" class="header__link header__link-cart"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
         
         <nav class="header__navigation">
             <div class="header__navigation-menu">
@@ -66,55 +65,72 @@
     <main>
         <section class="apper ">
             <h1 class="apper-head container">
-                registration
+                shopping cart
             </h1>
         </section>
-        <section class="registration container">
-            <form class="registration__form">
-                <div class="registration__blank">
-                    <div class="registration__blank-personal">
-                        <div class="registration__blank-personal__block">
-                            <h3 class="registration__blank-personal__head">Your name</h3>
-                            <p><input class="registration__blank-personal__input" type="text" src="#" placeholder="First Name"></p> 
-                            <input class="registration__blank-personal__input" type="text" src="#" placeholder="Last Name">
+        <section class="cart container">
+            <section class="choice">
+                <ul class="choice_list">
+                    <li class="choice__list-item list-item">
+                        <img class="list-item__image" src="./img/youngManCart.jpg" alt="youngMan">
+                        <button class="list-item__kross" type="button"><img src="./img/kross.svg" alt="kross"></button>
+                        <div class="list-item__description">
+                            
+                            <h2 class="list-item__description-name">mango people t-shirt</h2>
+                            <div class="list-item__description-specification description-specification">
+                                <p class="description__specification-text specification-text">
+                                    Price: <span class="specification-text__pink">$300 </span>	
+                                </p>
+                                <p class="description__specification-text">Color: Blue</p>
+                                <p class="description__specification-text">Size: x</p>
+                                <p class="description__specification-text specification-text">Quantity: <span class="specification-text__count">2</span> </p>
+                            </div>
                         </div>
-                        <div class="registration__blank-gender">
-                            <input class="registration__blank-gender__point" type="radio" id="contactChoice1" name="contact" value="email">
-                            <label class="registration__blank-gender__text" for="contactChoice1">Female</label>
-                            <input class="registration__blank-gender__point" type="radio" id="contactChoice2" name="contact" value="phone">
-                            <label class="registration__blank-gender__text" for="contactChoice2">Male</label>
+                    </li>
+                    <li class="choice__list-item list-item">
+                        <img src="./img/afroamericanMan.jpg" alt="youngMan">
+                        <button class="list-item__kross" type="button"><img src="./img/kross.svg" alt="kross"></button>
+                        <div class="list-item__description">
+                            
+                            <h2 class="list-item__description-name">mango people t-shirt</h2>
+                            <div class="list-item__description-specification description-specification">
+                                <p class="description__specification-text specification-text">
+                                    Price: <span class="specification-text__pink">$300 </span>	
+                                </p>
+                                <p class="description__specification-text">Color: Red</p>
+                                <p class="description__specification-text">Size: x</p>
+                                <p class="description__specification-text specification-text">Quantity: <span class="specification-text__count">2</span> </p>
+                            </div>
                         </div>
-                        
-                    </div>
-                    <div class="registration__blank-account">
-                            <h3 class="registration__blank-personal__head">Login details</h3>
-                            <p><input class="registration__blank-personal__input " type="email" placeholder="Email" required></p> 
-                            <input class="registration__blank-personal__input " type="password" src="#" placeholder="Password" required>
-                    </div>
-                    <p class="registration__blank-warning">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                    <div class="registration__blank-button">
-                        <a href="#" class="registration__blank-button">join now</a>  
-                    </div>
+                    </li>
+                </ul>
+                <div class="choice__active">
+                    <button class="choice__active-button">clear shopping cart</button>
+                    <button class="choice__active-button">continue shopping</button>
                 </div>
-            </form>
-            <section class="registration__privileges">
-                <h2 class="registration__privileges-apper">loyalty has its perks</h2>
-                <p class="registration__privileges-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                <nav>
-                    <ul class="registration__privileges-sublist">
-                        <li class="registration__privileges-list">15% off welcome offer</li>
-                        <li class="registration__privileges-list">Free shipping, returns and exchanges on all orders</li>
-                        <li class="registration__privileges-list">$10 off a purchase on your birthday</li>
-                        <li class="registration__privileges-list">Early access to products</li>
-                        <li class="registration__privileges-list">Exclusive offers & rewards</li>
-                    </ul>
-                </nav>
+            </section>
+            <section class="result">
+                <section class="result__adress adress">
+                    <h3 class="adress__apper">
+                        shipping adress
+                    </h3>
+                    <div class="adress__information"></div>
+                    <input type="text" class="adress__information-city" type="text" placeholder="Bangladesh">
+                    <input type="text" class="adress__information-state" type="text" placeholder="State">
+                    <input type="text" class="adress__information-postcode" type="text" placeholder="Postcode / Zip">
+                    <button class="adress__information-button">get a quote</button>
+                </section>
+                <section class="result__price price">
+                    <p class="price__one">sub total  <span class="price__one-number">$900</span></p>
+                    <p class="price__all">grand total     <span class="price__all-number">$900</span> </p>
+                    <button class="price__button">proceed to checkout</button>
+                </section>
             </section>
         </section>
         
     </main>
     <footer>
-
+    
         <section class="information">
             <section class="information__center container">
                 <div class="information__author">
@@ -143,9 +159,11 @@
             </section> 
         </section>
         
-
+    
         
-
-</footer>
+    
+    </footer>   
 </body>
 </html>
+
+

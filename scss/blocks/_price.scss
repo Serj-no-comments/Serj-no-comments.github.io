@@ -1,0 +1,39 @@
+.price{
+    padding: 40px 34px 42px 44px;
+
+    
+    &__one{
+        text-transform: uppercase;
+        @include font($size: 11px, $height: 13px, $weight: 400, $style:normal);
+        padding-bottom: 12px;
+    }
+
+    &__one-number{
+        padding-left: 30px;
+    }
+    
+    &__all{
+        text-transform: uppercase;
+        @include font($size: 16px, $height: 20px, $weight: 700, $style:normal);
+        padding-bottom: 21px;
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    &__all-number{
+        padding-left: 30px;
+        color: $pinky-color;
+    }
+
+    &__button{
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        background-color: $pinky-color;
+        border:none;
+        color: $white-color;
+        padding: 15px 0 15px 0;
+        @include font($size: 16px, $height: 20px, $weight: 300, $style:normal);
+        margin-top: 17px;
+        cursor: pointer;
+    }
+}

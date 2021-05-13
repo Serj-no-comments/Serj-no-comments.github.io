@@ -1,0 +1,50 @@
+.adress{
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+        width: 53%;
+    }
+    
+    @include phone{
+        width: 96%;
+
+    }
+    &__apper{
+        padding-bottom: 20px;
+        @include font($size: 16px, $height: 19px, $weight: 300, $style:normal);
+        text-transform: uppercase;
+
+        
+    }
+
+    &__information-city{
+        @include padding-margin-border;
+    }
+
+    &__information-city::placeholder{
+        @include font ($size: 13px, $height: 16px, $weight: 300, $style:normal);
+        opacity: .7;
+    }
+
+    &__information-state{
+        @include padding-margin-border;
+    }
+
+    &__information-postcode{
+        @include padding-margin-border;
+    }
+
+    &__information-button{
+        text-transform: uppercase;
+        @include font ($size: 11px, $height: 13px, $weight: 300, $style:normal);
+        width: 31%;
+        padding: 10px 14px;
+        text-transform: uppercase;
+        background-color: $white-color;
+        opacity: .7;
+        border: 1px solid $light-gray;
+        cursor: pointer;
+        margin-bottom: 57px;
+    }
+}

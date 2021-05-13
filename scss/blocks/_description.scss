@@ -1,0 +1,7 @@
+.description{
+    &__specification-text{
+        @include font($size: 22px, $height: 26px, $weight: 400, $style:normal);
+        opacity: .8;
+    }
+    
+}

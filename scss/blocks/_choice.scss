@@ -1,0 +1,46 @@
+.choice{
+    width: 57%;
+
+    @include tablet{
+        width: 95%;
+        
+    }
+
+    
+    &__list-item{
+        display: flex;
+        margin-bottom: 40px;
+        box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, .2);
+        
+    }
+
+    &__active{
+        padding-top: 32px; 
+        @include flex-center-space-between();
+
+        @include tablet{
+            justify-content: space-around;
+        }
+
+        @include phone{
+            justify-content: space-between;
+        }
+        
+    }
+
+    &__active-button{
+        background-color: $white-color;
+        padding: 16px 45px;
+        @include font($size: 14px, $height: 17px, $weight: 300, $style:normal);
+        text-transform: uppercase;
+        opacity: .6;
+        border: 1px solid $light-gray;
+        cursor: pointer;
+        margin: 0 5px 0 5px;
+
+        @include phone{
+            
+            min-height: 32px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.result{
+    width: 31%;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        width: 95%;
+    }
+
+    @include phone{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    &__adress{
+        @include tablet{
+            width: 53%;
+        }
+    }
+
+    &__price{
+        background-color: $light-pink;
+        text-align: right;
+
+        @include tablet{
+            width: 53%;
+            margin-left: 15px;
+            max-height: 130px;
+            margin: 39px 0 0 15px;
+        }
+
+        @include phone{
+            width: 95%;
+            margin: 0;
+        }
+    }
+
+    
+}
