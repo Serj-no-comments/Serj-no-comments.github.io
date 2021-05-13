@@ -20,19 +20,44 @@
 
     &__information-city{
         @include padding-margin-border;
+        outline: none;
     }
 
     &__information-city::placeholder{
         @include font ($size: 13px, $height: 16px, $weight: 300, $style:normal);
         opacity: .7;
+        outline: none;
+    }
+
+    &__information-city:hover,
+    &___information-city:focus {
+        border: 1px solid $pinky-color;
+        background: $white-color;
+        cursor: pointer;
     }
 
     &__information-state{
         @include padding-margin-border;
+        outline: none;
+    }
+
+    &__information-state:hover,
+    &___information-state:focus {
+        border: 1px solid $pinky-color;
+        background: $white-color;
+        cursor: pointer;
     }
 
     &__information-postcode{
         @include padding-margin-border;
+        outline: none;
+    }
+
+    &__information-postcode:hover,
+    &___information-postcode:focus {
+        border: 1px solid $pinky-color;
+        background: $white-color;
+        cursor: pointer;
     }
 
     &__information-button{
@@ -46,5 +71,6 @@
         border: 1px solid $light-gray;
         cursor: pointer;
         margin-bottom: 57px;
+        outline: none;
     }
 }

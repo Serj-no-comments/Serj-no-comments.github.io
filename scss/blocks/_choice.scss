@@ -37,6 +37,8 @@
         border: 1px solid $light-gray;
         cursor: pointer;
         margin: 0 5px 0 5px;
+        outline: $pinky-color;
+
 
         @include phone{
             

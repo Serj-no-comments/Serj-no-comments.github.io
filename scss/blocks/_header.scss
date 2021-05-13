@@ -59,8 +59,13 @@
         background-color: $white-color;
         display: none;
         position: absolute;
-        right: 0;
+        right: 12%;
         top: 75px;
+        box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, .2);
+
+        @include phone{
+            right: 0;
+        }
 
     }
 
