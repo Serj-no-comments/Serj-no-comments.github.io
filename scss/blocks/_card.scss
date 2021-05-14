@@ -1,0 +1,70 @@
+.card{
+    text-align: center;
+    padding: 64px;
+    position: relative;
+    width: 71%;
+    margin-top: -40px;
+    margin-bottom: 130px;
+    &__block{
+        top: -40px;
+        border: 1px solid $light-gray;
+        background-color: $white-color;
+    }
+
+    &__information{
+        margin: 0 auto;
+        width: 56%;
+        border-bottom: 1px solid $light-gray;
+    }
+    &__information-collection{
+        color: $pinky-color;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+    &__information-row{
+        width: 63px;
+        height: 3px;
+        background-color: $bright-pink;
+        margin: auto;
+    }
+
+    &__information-name{
+        @include font($size: 18px, $height: 21px, $weight: 300, $style:normal);
+        text-transform: uppercase;
+        opacity: .7;
+        padding: 12px 0 48px 0;
+    }
+    &__information-text{
+        opacity: .7;
+        padding-bottom: 32px;
+        width: 86%;
+        margin: auto;
+    }
+    &__information-price{
+        @include font($size: 24px, $height: 29px, $weight: 300, $style:normal);
+        color: $pinky-color;
+        padding-bottom: 65px;
+    }
+
+    &__interective{
+        padding-top: 65px;
+    }
+
+    &__interective-send{
+        border: 1px solid $pinky-color;
+        position: relative;
+        background-color: $white-color;
+        color: $pinky-color;
+        padding: 14px 56px 14px 72px;
+    }
+
+    &__interective-send::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/pink-cart.svg);
+        width: 26px;
+        height: 25px;
+        left: 24px;
+        top: 12px;
+    }
+}

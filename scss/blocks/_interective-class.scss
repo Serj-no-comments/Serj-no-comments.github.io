@@ -1,0 +1,26 @@
+.interective-class{
+    &__button{
+        position: relative;
+        margin:0 21px 48px 21px;
+        border:none;
+        background-color: $white-color;
+        @include font($size: 14px, $height: 17px, $weight: 400, $style:normal);
+        text-transform: uppercase;
+        color: $dark-gray;
+        
+        cursor: pointer;
+    }
+
+    &__button::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/vector-down.png);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 5px;
+        right: -13px;
+        top: 7px;
+
+    }
+
+}

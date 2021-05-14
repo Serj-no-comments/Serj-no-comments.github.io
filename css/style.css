@@ -1745,4 +1745,111 @@ body {
     margin-right: 10px;
   }
 }
+
+.card {
+  text-align: center;
+  padding: 64px;
+  position: relative;
+  width: 71%;
+  margin-top: -40px;
+  margin-bottom: 130px;
+}
+
+.card__block {
+  top: -40px;
+  border: 1px solid #A4A4A4;
+  background-color: #FBFBFB;
+}
+
+.card__information {
+  margin: 0 auto;
+  width: 56%;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+.card__information-collection {
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+.card__information-row {
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  margin: auto;
+}
+
+.card__information-name {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  opacity: .7;
+  padding: 12px 0 48px 0;
+}
+
+.card__information-text {
+  opacity: .7;
+  padding-bottom: 32px;
+  width: 86%;
+  margin: auto;
+}
+
+.card__information-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  padding-bottom: 65px;
+}
+
+.card__interective {
+  padding-top: 65px;
+}
+
+.card__interective-send {
+  border: 1px solid #F16D7F;
+  position: relative;
+  background-color: #FBFBFB;
+  color: #F16D7F;
+  padding: 14px 56px 14px 72px;
+}
+
+.card__interective-send::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/pink-cart.svg);
+  width: 26px;
+  height: 25px;
+  left: 24px;
+  top: 12px;
+}
+
+.interective-class__button {
+  position: relative;
+  margin: 0 21px 48px 21px;
+  border: none;
+  background-color: #FBFBFB;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #6F6E6E;
+  cursor: pointer;
+}
+
+.interective-class__button::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/vector-down.png);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 5px;
+  right: -13px;
+  top: 7px;
+}
 /*# sourceMappingURL=style.css.map */
