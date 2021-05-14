@@ -925,6 +925,12 @@ body {
   outline: none;
 }
 
+@media (max-width: 768px) {
+  .information__feedback-input {
+    padding: 17px 35px 17px 20px;
+  }
+}
+
 .information__feedback-input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 17px;

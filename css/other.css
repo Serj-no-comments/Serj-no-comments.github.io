@@ -1,0 +1,25 @@
+.width-37{
+    width: 37%;
+    
+}
+
+.height-724{
+    height: 724px;
+}
+
+.margin{
+    margin-top: 10px;
+    margin-bottom: 42px;
+    
+}
+
+
+.bg-c{
+    background-color: #F7F7F7;
+}
+
+.button-slide{
+    padding: 13px 17px;
+    background: rgba(42, 42, 42, 0.15);
+    width: 0;
+}

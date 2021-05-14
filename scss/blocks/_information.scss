@@ -85,6 +85,10 @@
         border: none;
         border-radius: 20px 0 0 20px;
         outline: none;
+
+        @include phone{
+            padding: 17px 35px 17px 20px;
+        }
     }
 
     &__feedback-input::placeholder {
