@@ -1,6 +1,16 @@
-.width-37{
-    width: 37%;
-    
+.width-heigth-margin{
+    width: 42%;
+    min-height: 724px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1599px) {
+    .width-heigth-margin{
+        
+        min-height: 565px;
+        
+    }
 }
 
 .height-724{

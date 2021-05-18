@@ -41,8 +41,9 @@
         opacity: .6;
         border: 1px solid $light-gray;
         cursor: pointer;
-        
+        text-decoration: none;
         outline: $pinky-color;
+        color: $black-color;
 
 
         @include phone{

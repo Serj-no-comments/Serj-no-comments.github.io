@@ -1,0 +1,45 @@
+.head-filter{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-column-gap: 290px;
+    grid-template-rows: 17px;
+    margin-top: 51px;
+
+    &__button{
+        background-color: $white-color;
+        border: none;
+        text-transform: uppercase;
+        @include font($size: 14px, $height: 17px, $weight: 600, $style:normal);
+        
+    }
+
+    &__button-image{
+        padding-left: 11px ;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 120px 30px 40px;
+        grid-column-gap: 38px;
+    }
+
+    &__list-item{
+        background-color: $white-color;
+        border: none;
+        text-transform: uppercase;
+        position: relative;
+        color: $gray-color;
+        white-space: nowrap;
+    }
+
+    &__list-item::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/vector-down.png);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 5px;
+        right: -13px;
+        top: 7px;
+    }
+}

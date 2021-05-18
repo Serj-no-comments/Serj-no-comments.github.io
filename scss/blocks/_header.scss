@@ -6,7 +6,6 @@
         min-height: 75px;
         @include flex-center-space-between();
        
-        
     }
 
     &__logo {
@@ -58,6 +57,7 @@
         right: 12%;
         top: 75px;
         box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, .2);
+        min-width: 232px;
 
         @include phone{
             right: 0;

@@ -2,6 +2,7 @@
 @import "./mixsins";
 @import "./reset";
 @import "./general";
+@import "../scss/fonts";
 @import "../scss/blocks/header";
 @import "../scss/blocks/navigation";
 @import "../scss/blocks/brand";
@@ -22,3 +23,7 @@
 @import "../scss/blocks/active-button";
 @import "../scss/blocks/card";
 @import "../scss/blocks/interective-class";
+@import "../scss/blocks/variant";
+@import "../scss/blocks/products-list";
+@import "../scss/blocks/head-filter";
+
