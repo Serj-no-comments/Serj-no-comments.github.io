@@ -5,6 +5,11 @@
     width: 71%;
     margin-top: -40px;
     margin-bottom: 130px;
+
+    @include tablet{
+        width: 100%;
+    }
+
     &__block{
         top: -40px;
         border: 1px solid $light-gray;
@@ -15,6 +20,11 @@
         margin: 0 auto;
         width: 56%;
         border-bottom: 1px solid $light-gray;
+
+        @include tablet{
+            width: 100%;
+        }
+
     }
     &__information-collection{
         color: $pinky-color;
@@ -39,6 +49,11 @@
         padding-bottom: 32px;
         width: 86%;
         margin: auto;
+        @include font($size: 14px, $height: 16px, $weight: 300, $style:normal);
+
+        @include tablet{
+            @include font($size: 14px, $height: 20px, $weight: 300, $style:normal);
+        }
     }
     &__information-price{
         @include font($size: 24px, $height: 29px, $weight: 300, $style:normal);

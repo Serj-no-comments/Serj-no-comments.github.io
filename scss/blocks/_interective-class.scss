@@ -1,4 +1,14 @@
 .interective-class{
+
+    @include tablet{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+
     &__button{
         position: relative;
         margin:0 21px 48px 21px;
@@ -7,8 +17,12 @@
         @include font($size: 14px, $height: 17px, $weight: 400, $style:normal);
         text-transform: uppercase;
         color: $dark-gray;
-        
         cursor: pointer;
+
+        @include phone{
+            @include font($size: 10px, $height: 12px, $weight: 400, $style:normal);
+            margin:0 21px 48px 11px;
+        }
     }
 
     &__button::after{
@@ -20,6 +34,10 @@
         height: 5px;
         right: -13px;
         top: 7px;
+        
+        @include phone{
+            top: 3px;
+        }
 
     }
 
