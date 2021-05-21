@@ -7,8 +7,10 @@
     margin-bottom: 130px;
 
     @include tablet{
-        width: 100%;
+        width: auto;
     }
+
+    
 
     &__block{
         top: -40px;

@@ -47,3 +47,9 @@
     padding: 0 0 0 15px;
 }
 
+.numbering{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 96px;
+}
+
