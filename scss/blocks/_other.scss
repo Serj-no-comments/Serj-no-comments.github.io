@@ -1,0 +1,48 @@
+.other{
+
+    @include flex-center-space-between();
+    min-height: 80px;
+    background-color: $black-color;
+    &__down{
+        @include flex-center-space-between();
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        @include phone {
+            flex-direction: column-reverse;
+        }
+    }
+        
+    &__title{
+        display: none;
+    }
+
+    &__down-copyright {
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        font-size: 16px;
+        line-height: 19px;
+
+        @include phone {
+            padding: 40px 0 9px 0;
+        }
+    }
+
+    &__down-partners {
+        
+        @include phone {
+            padding-top: 40px;
+        }
+    }
+
+    &__down-link {
+        padding: 9px 12px;
+        background-color: $white-color;
+        margin: 0 8px 0 0;
+    }
+
+    
+}

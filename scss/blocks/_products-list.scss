@@ -6,6 +6,10 @@
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
+    &__title{
+        display: none;
+    }
+
     &__item {
         
         border-radius: 0px;

@@ -17,11 +17,15 @@
         background-color: transparent;
     }
 
+    &__menu-button:hover +&__navigation{
+       
+        transform: translateX(0);
+    }
 
     &__menu-button:focus~&__navigation,
     &__navigation:hover {
-        display: block;
-        z-index: 1;
+        
+        transform: translateX(0);
     }
 
 
@@ -51,14 +55,17 @@
 
 
     &__navigation {
+        
         background-color: $white-color;
-        display: none;
         position: absolute;
         right: 12%;
         top: 75px;
         box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, .2);
         min-width: 232px;
-
+        min-height: 764px;
+        transform: translateY(-966px);
+        transition: transform 0.3s;
+        z-index: 1;
         @include phone{
             right: 0;
         }
@@ -94,7 +101,7 @@
     &__navigation-kross {
         border: none;
         background-color: $white-color;
-        padding-left: 150px;
+        padding-left: 165px;
         outline: none;
         cursor: pointer;
     }
