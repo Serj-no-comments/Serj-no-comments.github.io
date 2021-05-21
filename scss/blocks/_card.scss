@@ -73,6 +73,13 @@
         padding: 14px 56px 14px 72px;
     }
 
+    
+    &__interective-send:focus{
+
+        background-color: $pinky-color;
+        color: $white-color;
+    }
+
     &__interective-send::after{
         content: '';
         position: absolute;
