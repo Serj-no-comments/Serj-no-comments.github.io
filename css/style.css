@@ -875,10 +875,6 @@ body {
   }
 }
 
-.information__title {
-  display: none;
-}
-
 .information__center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2189,13 +2185,5 @@ body {
   height: 5px;
   right: -13px;
   top: 7px;
-}
-
-.assortment__title {
-  display: none;
-}
-
-.assortment__product-title {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
