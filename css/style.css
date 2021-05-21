@@ -307,7 +307,7 @@ body {
 .header__navigation-kross {
   border: none;
   background-color: #FBFBFB;
-  padding-left: 150px;
+  padding-left: 165px;
   outline: none;
   cursor: pointer;
 }
@@ -696,7 +696,7 @@ body {
   display: none;
 }
 
-.products__item-buy:hover .products__item-buy_back {
+.products__item-buy:hover .products__item-back {
   display: block;
 }
 
