@@ -15,7 +15,9 @@
 
     }
 
-
+    &__title{
+        display: none;
+    }
 
     &__center {
         @include flex-center-space-between();

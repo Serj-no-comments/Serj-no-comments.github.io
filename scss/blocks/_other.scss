@@ -15,7 +15,9 @@
         }
     }
         
-
+    &__title{
+        display: none;
+    }
 
     &__down-copyright {
         display: flex;
@@ -30,6 +32,7 @@
     }
 
     &__down-partners {
+        
         @include phone {
             padding-top: 40px;
         }
