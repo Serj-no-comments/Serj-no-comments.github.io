@@ -20,12 +20,22 @@
         align-items: center;
         justify-content: space-between;
         height: 148px;
+
+        @include phone{
+            flex-direction: column;
+            padding: 24px 0 64px;
+        }
     }
 
     &__block-head{
         color: $pinky-color;
         text-transform: uppercase;
         @include font($size: 24px, $height: 29px, $weight: 400, $style:normal);
+
+        @include phone{
+            padding: 0 0 32px;
+        }
+
     }
 
     &__block-link{

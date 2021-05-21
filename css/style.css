@@ -1121,6 +1121,16 @@ body {
   height: 148px;
 }
 
+@media (max-width: 768px) {
+  .apper__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 24px 0 64px;
+  }
+}
+
 .apper__block-head {
   color: #F16D7F;
   text-transform: uppercase;
@@ -1128,6 +1138,12 @@ body {
   line-height: 29px;
   font-weight: 400;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .apper__block-head {
+    padding: 0 0 32px;
+  }
 }
 
 .apper__block-link {
@@ -1788,6 +1804,12 @@ body {
   margin-bottom: 130px;
 }
 
+@media (max-width: 1599px) {
+  .card {
+    width: 100%;
+  }
+}
+
 .card__block {
   top: -40px;
   border: 1px solid #A4A4A4;
@@ -1798,6 +1820,12 @@ body {
   margin: 0 auto;
   width: 56%;
   border-bottom: 1px solid #A4A4A4;
+}
+
+@media (max-width: 1599px) {
+  .card__information {
+    width: 100%;
+  }
 }
 
 .card__information-collection {
@@ -1828,6 +1856,19 @@ body {
   padding-bottom: 32px;
   width: 86%;
   margin: auto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media (max-width: 1599px) {
+  .card__information-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    font-style: normal;
+  }
 }
 
 .card__information-price {
@@ -1861,6 +1902,19 @@ body {
   top: 12px;
 }
 
+@media (max-width: 1599px) {
+  .interective-class {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1599px) {
+  .interective-class {
+    width: 100%;
+  }
+}
+
 .interective-class__button {
   position: relative;
   margin: 0 21px 48px 21px;
@@ -1875,6 +1929,16 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .interective-class__button {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 21px 48px 11px;
+  }
+}
+
 .interective-class__button::after {
   content: '';
   position: absolute;
@@ -1884,6 +1948,12 @@ body {
   height: 5px;
   right: -13px;
   top: 7px;
+}
+
+@media (max-width: 768px) {
+  .interective-class__button::after {
+    top: 3px;
+  }
 }
 
 .variant__list {
@@ -1928,6 +1998,24 @@ body {
 @media (max-width: 768px) {
   .variant__item {
     width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .variant__item-midle {
+    display: none;
+  }
+}
+
+@media (max-width: 1599px) {
+  .variant__item-end {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .variant__item-end {
+    display: block;
   }
 }
 

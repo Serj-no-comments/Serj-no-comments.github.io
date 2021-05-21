@@ -29,6 +29,24 @@
         }
     }
 
+    &__item-midle{
+
+        @include phone{
+            display: none;
+        }
+    }
+
+
+    &__item-end{
+        @include tablet{
+            display: none;
+        }
+
+        @include phone{
+            display: block;
+        }
+    }
+
 
     &__item-img {
         position: relative;
