@@ -267,8 +267,9 @@ body {
   -webkit-box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 20px 15px 10px 5px rgba(0, 0, 0, 0.2);
   min-width: 232px;
-  -webkit-transform: translateY(-1000px);
-          transform: translateY(-1000px);
+  min-height: 764px;
+  -webkit-transform: translateY(-966px);
+          transform: translateY(-966px);
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
