@@ -1,4 +1,4 @@
-.width-heigth-margin{
+.width-heigth-margin {
     width: 42%;
     min-height: 724px;
     margin: 0 auto;
@@ -6,50 +6,57 @@
 }
 
 @media (max-width: 1599px) {
-    .width-heigth-margin{
+    .width-heigth-margin {
         width: 62%;
         min-height: 565px;
-        
+
     }
 }
 
 @media (max-width: 768px) {
-    .width-heigth-margin{
+    .width-heigth-margin {
         width: 100%;
         min-height: 454px;
-        
+
     }
 }
 
-.height-724{
+.height-724 {
     height: 724px;
 }
 
-.margin{
+.margin {
     margin-top: 10px;
     margin-bottom: 42px;
-    
+
 }
 
-.margin-128{
+.margin-128 {
     margin-bottom: 128px;
 }
-.bg-c{
+
+.bg-c {
     background-color: #F7F7F7;
 }
 
-.button-slide{
+.button-slide {
     padding: 13px 17px;
     background: rgba(42, 42, 42, 0.15);
     width: 0;
 }
-.padding-button{
+
+.padding-button {
     padding: 0 0 0 15px;
 }
 
-.numbering{
+.numbering {
     display: flex;
     justify-content: center;
     padding-bottom: 96px;
 }
 
+@media (max-width: 1199px) {
+    .item-except {
+        display: none;
+    }
+}
