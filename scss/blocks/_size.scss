@@ -1,0 +1,35 @@
+.size{
+    z-index: 1;
+    position: absolute;
+    box-shadow: 10px 1px 21px 7px rgba(227, 199, 205, 0.2);
+    display: none;
+    background-color: $white-color;
+    padding: 9px 30px 11px 31px;
+
+    &__item-point{
+        display: none;
+    }
+
+    &__item-text{
+        position: relative;
+        color: $dark-gray;
+    }
+
+    &__item-text:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid ;
+        position: absolute;
+        left: -16px;
+        top: 2px;
+        opacity: .3;
+        
+    }
+
+
+    &__item-point:checked+&__item-text:before {
+        background: $pinky-color;
+    }
+
+}

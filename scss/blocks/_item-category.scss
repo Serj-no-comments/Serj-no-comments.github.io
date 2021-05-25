@@ -1,0 +1,15 @@
+.item-category{
+    
+
+    &__button{
+        background-color: $white-color;
+        border: none;
+        padding: 3px 0 3px 0;
+        color: $gray-color;
+    }
+
+    &__button:hover,
+    &__button:focus{
+        color: $pinky-color;
+    }
+}

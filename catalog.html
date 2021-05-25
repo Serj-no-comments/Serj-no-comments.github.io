@@ -78,11 +78,66 @@
             <section class="assortment__head head-filter ">
                 <h2 class="visually-hidden">Assortment</h2>
                 <button class="head-filter__button"> <span class="head-filter__button-text"> filter</span> <img class="head-filter__button-image" src="./img/stayer.svg" alt="stayer"></button>
+                <nav class="filter">
+                    <ul class="filter__list">
+                        <li>
+                            <button class="filter__head"><span class="filter__head-text">filter</span>  <img class="filter__head-image" src="./img/stayer-pink.svg" alt="stayer-pink"></button>
+                        </li>
+                        
+                        <li class="filter__item">
+                            <button class="filter__item-button">category</button>
+                            <ul class="filter__item-category item-category">
+                                <li><button class="item-category__button">Accessories</button></li>
+                                <li><button class="item-category__button">Bags</button></li>
+                                <li><button class="item-category__button">Denim</button></li>
+                                <li><button class="item-category__button">Hoodies & Sweatshirts</button></li>
+                                <li><button class="item-category__button">Jackets & Coats</button></li>
+                                <li><button class="item-category__button">Polos</button></li>
+                                <li><button class="item-category__button">Shirts</button></li>
+                                <li><button class="item-category__button">Shoes</button></li>
+                                <li><button class="item-category__button">Sweaters & Knits</button></li>
+                                <li><button class="item-category__button">T-Shirts</button></li>
+                                <li><button class="item-category__button">Tanks</button></li>
+                            </ul>
+                        </li>
+                        <li class="filter__item">
+                                <button class="filter__item-button">brand</button>
+                        </li>
+                        <li class="filter__item">
+                                <button class="filter__item-button">designer</button>
+                        </li>
+                    </ul>
+                </nav>
+                
+                
                 <ul class="head-filter__list">
                     <li><button class="head-filter__list-item">trending now</button></li>
-                    <li><button class="head-filter__list-item">size</button></li>
+                    <li><button class="head-filter__list-item button-size">size</button>
+                        <nav class="size">
+                            <ul class="size__list">
+                                <li class="size__item">
+                                    <input class="size__item-point" type="radio" id="contactChoice1" name="contact" >
+                                    <label class="size__item-text" for="contactChoice1">XS</label>
+                                </li>
+                                <li class="size__item">
+                                    <input class="size__item-point" type="radio" id="contactChoice2" name="contact" >
+                                    <label class="size__item-text" for="contactChoice2">S</label>
+                                </li>
+                                <li class="size__item">
+                                    <input class="size__item-point" type="radio" id="contactChoice3" name="contact" >
+                                    <label class="size__item-text" for="contactChoice3">M</label>
+                                </li>
+                                <li class="size__item">
+                                    <input class="size__item-point" type="radio" id="contactChoice4" name="contact" >
+                                    <label class="size__item-text" for="contactChoice4">L</label>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    
                     <li><button class="head-filter__list-item">price</button> </li>
                 </ul>
+                
             </section>
             <section class="assortment__product">
                 <h2 class="visually-hidden">Products</h2>
@@ -161,6 +216,7 @@
             </section>
         </section>
         <section class="numbering container">
+            <h2 class="visually-hidden">Numbering</h2>
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                   <li class="page-item">

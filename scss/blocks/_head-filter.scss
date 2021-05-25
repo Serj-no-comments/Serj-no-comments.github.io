@@ -19,6 +19,13 @@
 
     }
 
+    &__button:focus~.filter,
+    .filter:hover {
+        
+        display: block;
+    }
+
+
     &__button-text {
         @include phone {
             display: none;
