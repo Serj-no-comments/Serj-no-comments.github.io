@@ -12,6 +12,10 @@
         
         width: 95%;
     }
+
+    &__title{
+        display: none;
+    }
     &__adress{
         @include tablet{
             width: 53%;
@@ -35,5 +39,8 @@
         }
     }
 
+    &__price-title{
+        display: none;
+    }
     
 }

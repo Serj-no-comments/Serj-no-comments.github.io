@@ -1,38 +1,73 @@
-.head-filter{
+.head-filter {
     display: grid;
-    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(auto-fit, 100px);
     grid-column-gap: 290px;
     grid-template-rows: 17px;
     margin-top: 51px;
+    position: relative;
 
-    &__button{
+    @include phone {
+        grid-template-columns: repeat(auto-fit, 37px);
+        grid-column-gap: 61px;
+    }
+
+    &__button {
         background-color: $white-color;
         border: none;
         text-transform: uppercase;
         @include font($size: 14px, $height: 17px, $weight: 600, $style:normal);
+
+    }
+
+    &__button:focus~.filter,
+    .filter:hover {
         
+        display: block;
     }
 
-    &__button-image{
-        padding-left: 11px ;
+
+    &__button-text {
+        @include phone {
+            display: none;
+            position: absolute;
+        }
     }
 
-    &__list{
+    &__button-image {
+        padding-left: 11px;
+
+        @include phone {
+            padding: 0;
+            width: 38px;
+            height: 25px;
+        }
+    }
+
+    &__list {
         display: grid;
         grid-template-columns: 120px 30px 40px;
         grid-column-gap: 38px;
+        background-color: $white-color;
+
+        @include phone {
+            grid-template-columns: 96px 25px 30px;
+        }
     }
 
-    &__list-item{
+    &__list-item {
         background-color: $white-color;
         border: none;
         text-transform: uppercase;
         position: relative;
         color: $gray-color;
         white-space: nowrap;
+
+        @include phone {
+            @include font($size: 12px, $height: 14px, $weight: 600, $style:normal);
+        }
     }
 
-    &__list-item::after{
+    &__list-item::after {
         content: '';
         position: absolute;
         background-image: url(../img/vector-down.png);

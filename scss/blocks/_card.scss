@@ -7,8 +7,10 @@
     margin-bottom: 130px;
 
     @include tablet{
-        width: 100%;
+        width: auto;
     }
+
+    
 
     &__block{
         top: -40px;
@@ -71,6 +73,13 @@
         background-color: $white-color;
         color: $pinky-color;
         padding: 14px 56px 14px 72px;
+    }
+
+    
+    &__interective-send:focus{
+
+        background-color: $pinky-color;
+        color: $white-color;
     }
 
     &__interective-send::after{

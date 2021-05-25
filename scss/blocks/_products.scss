@@ -62,7 +62,6 @@
         line-height: 17px;
         color: $gray-color;
         width: 315px;
-        height: 51px;
         font-weight: 300;
         line-height: 17px;
         margin-bottom: 18px;
@@ -86,11 +85,11 @@
 
     }
 
-    &__item-buy_back {
+    &__item-back {
         display: none;
     }
 
-    &__item-buy:hover &__item-buy_back {
+    &__item-buy:hover &__item-back {
         display: block;
     }
 

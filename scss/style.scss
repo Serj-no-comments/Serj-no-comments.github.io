@@ -2,6 +2,7 @@
 @import "./mixsins";
 @import "./reset";
 @import "./general";
+@import "./other";
 @import "../scss/fonts";
 @import "../scss/blocks/header";
 @import "../scss/blocks/navigation";
@@ -10,12 +11,13 @@
 @import "../scss/blocks/products";
 @import "../scss/blocks/opportunities";
 @import "../scss/blocks/information";
+@import "../scss/blocks/other";
 @import "../scss/blocks/apper";
 @import "../scss/blocks/registration";
 @import "../scss/blocks/cart";
 @import "../scss/blocks/_choice.scss";
 @import "../scss/blocks/list-item";
-@import "../scss/blocks/description";
+@import "../scss/blocks/description-specification";
 @import "../scss/blocks/specification-text";
 @import "../scss/blocks/result";
 @import "../scss/blocks/adress";
@@ -26,4 +28,7 @@
 @import "../scss/blocks/variant";
 @import "../scss/blocks/products-list";
 @import "../scss/blocks/head-filter";
-
+@import "../scss/blocks/assortment";
+@import "../scss/blocks/filter";
+@import "../scss/blocks/item-category";
+@import "../scss/blocks/size";

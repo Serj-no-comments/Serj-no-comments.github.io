@@ -4,15 +4,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
+        margin-bottom: 128px;
         @include tablet {
+            width: 96%;
             justify-content: space-around;
+            margin: 0 auto;
         }
 
         @include phone {
             justify-content: center;
         }
-        margin-bottom: 128px;
+        
     }
 
     &__item {
@@ -62,7 +64,6 @@
         line-height: 17px;
         color: $gray-color;
         width: 315px;
-        height: 51px;
         font-weight: 300;
         line-height: 17px;
         margin-bottom: 18px;

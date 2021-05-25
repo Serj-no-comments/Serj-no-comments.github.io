@@ -18,12 +18,12 @@
     &__block{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 148px;
 
         @include phone{
             flex-direction: column;
-            padding: 24px 0 64px;
+            padding: 24px 0 46px;
         }
     }
 
